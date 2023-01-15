@@ -48,17 +48,7 @@ p{
   display: flex;
   align-items: center;
 }
-.menu-nav{
-  display: flex;
-  align-items: center;
-}
-.menu-list-item:not(:last-child){
-  margin-right: 50px;
-}
-.contact-list{
-  display: flex;
-  margin-left: auto;
-}
+
 .contact-list-item:not(:last-child){
   margin-right: 50px;
 }
@@ -73,6 +63,23 @@ p{
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.menu-nav{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: var(--brand-color);
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  display: block;
+}
+.logo-header-position{
+  padding: 24px 0px 25px;
+}
 .menu-list{
   display: flex;
 }
@@ -86,6 +93,9 @@ p{
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.menu-list-item:not(:last-child){
+  margin-right: 50px;
 }
 .menu-list-studio{
   font-size: 14px;
@@ -112,6 +122,10 @@ p{
 .menu-list-link:hover, .menu-list-link:focus, .menu-list-link:active{
   color: var(--brand-color);
 }
+.contact-list{
+  display: flex;
+  margin-left: auto;
+}
 .contact-list-link{
   padding-top: 32px;
   padding-bottom: 32px;
@@ -125,19 +139,10 @@ p{
 }
 .contact-list-link:hover, .contact-list-link:focus, .contact-list-link:active{
   color: var(--brand-color);
+  
 }
-.logo{
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  color: var(--brand-color);
-  margin-right: 93px;
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  display: block;
-}
-.logo-header-position{
-  padding: 24px 0px 25px;
+.contact-list-item:not(:last-child){
+  margin-right: 50px;
 }
 .hero-section{
   text-align: center;
@@ -169,8 +174,28 @@ p{
   cursor: pointer;
   width: 261px;
 }
-.list-feature{
+.list-feature {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+.feature-section-item{
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.feature-section-item h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+.feature-section-item p {
+  margin: 0;
+}
+.feature-section-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .feature-section-list-title{
   font-style: normal;
@@ -180,31 +205,6 @@ p{
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
-.feature-section-item{
-  width: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-}
-.list-feature {
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 0;
-  list-style: none;
-}
-
-.feature-section-item h2 {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-.feature-section-item p {
-  margin: 0;
-}
-.feature-section-item {
-  flex-basis: calc((100% - 90px) / 4);
 }
 .feature-section-list-text{
   font-style: normal;
@@ -223,15 +223,11 @@ p{
   letter-spacing: 0.03em;
   margin-bottom: 55px;
 }
-.dedication-section-item{
-  display: flex;
-}
 .list-dedication {
   display: flex;
   flex-wrap: wrap;
   gap: 23px;
   padding: 0;
-  list-style: none;
 }
 .dedication-section-item {
   flex-basis: calc((100% - 50px) / 3);
@@ -251,7 +247,6 @@ p{
   flex-wrap: wrap;
   gap: 37px;
   padding: 0;
-  list-style: none;
 }
 .team-section-item {
   flex-basis: calc((100% - 111px) / 4);
