@@ -3,6 +3,7 @@
   --main-color-dark: #212121;
   --main-color-light: #FFFFFF;
   --main-color-grey: #757575;
+  --main-background-chill:#F5F4FA;
   --main-background-light: #FFFFFF;
   --main-background-beige: #E5E5E5;
   --main-background-semi-light: #f4f4f4;
@@ -147,8 +148,16 @@ p{
 .hero-section{
   text-align: center;
   padding: 200px 0;
-  background-color: var(--main-background-dark)
+  background-color: var(--main-background-dark);
+  background: rgba(47, 48, 58, 0.4);
+  background-size: cover;
+  margin: auto;
+  background: rgba(47, 48, 58, 0.4) url("https://cdn.discordapp.com/attachments/845486960742105089/1064712815560114276/img-hero.jpg") 
+  no-repeat
+  center;
+  box-shadow: none;
 }
+
 .hero-title{
   font-size: 44px;
   font-weight: 900;
@@ -179,6 +188,19 @@ p{
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+}
+.icon-item{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: var(--main-background-chill);
+  fill:var(--main-background-light);
+  padding: 25px 102px 25px 102px;
+  border-radius: 4px;
+}
+.feature-icon{ 
+    width: 66px;
+    height: 70px;
 }
 .feature-section-item{
   width: 270px;
@@ -243,6 +265,26 @@ p{
   font-size: 36px;
   line-height: 1,1;
 }
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+.team-soc-link {
+    background-color: var(--main-background-light);
+    border-radius: 50%;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus{
+  background-color: var(--brand-color);
+}
 .team-dedication {
   flex-wrap: wrap;
   gap: 37px;
@@ -275,11 +317,67 @@ p{
   display: block;
   font-weight: 400;
   margin: 0px;
+  margin-bottom: 28px;
   font-size: 16px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: var(--main-color-grey);
 }
+.icon-item{
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--brand-color);
+    
+}
+
+.clients-title {
+    padding-top: 130px;
+    padding-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--main-color-dark);
+    text-align: center;
+}
+.clients-list {
+    display: flex; 
+    gap: 24px;
+    margin-bottom: 151px;
+}
+.clients-list-item{
+  flex-basis: calc((100% - 130px) / 6);
+}
+.clients-link{
+    width: 168px;
+    height: 88px;
+    border: 1px solid#AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.clients-list-item{
+    color: var(--brand-color);
+    width: 168px;
+    height: 88px;
+    border-color: var(--brand-color);
+}
+.clients-link:hover,
+.clients-link:focus{
+    color: var(--brand-color);
+    border-color: solid 1px var(--brand-color);
+
+}
+.clients-icon {
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
+}
+
 .footer{
   padding-top: 60px;
   padding-bottom: 60px;
@@ -290,10 +388,11 @@ p{
   margin-right: 0px;
 }
 .list-footer{
-  display: inline;
+  display: flex;
+  gap: 30px;
 }
-.footer-address{
-  width: 231px;
+.footer-title-links{
+  color: var(--main-background-light);
 }
 .footer-address-info{
   font-weight: 400;
@@ -304,6 +403,9 @@ p{
   color: var(--main-color-light);
 }
 .footer-address-link{
+  position: relative;
+  right:  310px;
+  top: 50px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -316,6 +418,33 @@ p{
 }
 .footer-address-link:hover, .footer-address-link:focus{
   color: var(--brand-color);
+}
+.footer-list-icon{
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+    gap: 16px;
+
+}
+.footer-item-icon{
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer-item-icon:hover,
+.footer-item-icon:focus{
+    background-color: var(--brand-color);
+}
+.footer-svg-item{
+    width: 24px;
+    height: 24px;
+}
+.footer-icon-link{
+    width: 40px;
+    height: 40px;
 }
 
 .list-menu-button{
