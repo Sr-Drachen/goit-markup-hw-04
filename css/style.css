@@ -1,25 +1,28 @@
+
+/* ESTOS SON TODOS LOS COLORES GLOBALES */
+
 :root {
   --brand-color: #2196F3;
   --main-color-dark: #212121;
   --main-color-light: #FFFFFF;
   --main-color-grey: #757575;
+  --main-border-light:#EEEEEE;
+  --main-border-grey: #AFB1B8;
+  --main-border-chill: #f7ebeb;
   --main-background-chill:#F5F4FA;
   --main-background-light: #FFFFFF;
   --main-background-beige: #E5E5E5;
   --main-background-semi-light: #f4f4f4;
   --main-background-dark: #2F303A;
  }
+
+/*ESTO SON ESTILOS GLOBALES PARA TODO EL CODIGO */
+
 body{
   font-family: 'Roboto', sans-serif;
   color: var(--main-color-dark);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p{
+h1,h2,h3,h4,h5,h6,p{
   margin-top: 0px;
 }
 *,*::before,*::after {
@@ -45,14 +48,20 @@ p{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.icon-item{
+  width: 264px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--brand-color);
+}
+
 .header-container{
   display: flex;
   align-items: center;
 }
 
-.contact-list-item:not(:last-child){
-  margin-right: 50px;
-}
 .container {  
   width: 1200px;  
   padding-left: 15px;  
@@ -64,6 +73,9 @@ p{
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/* ESTO ES TODO HEADER */
+
 .menu-nav{
   display: flex;
   align-items: center;
@@ -138,6 +150,9 @@ p{
   color: var(--main-color-grey);
   text-decoration: none;
 }
+.contact-list-item:not(:last-child){
+  margin-right: 50px;
+}
 .contact-list-link:hover, .contact-list-link:focus, .contact-list-link:active{
   color: var(--brand-color);
   
@@ -145,6 +160,9 @@ p{
 .contact-list-item:not(:last-child){
   margin-right: 50px;
 }
+
+/* ESTO ES HERO SECTION */
+
 .hero-section{
   text-align: center;
   padding: 200px 0;
@@ -183,6 +201,9 @@ p{
   cursor: pointer;
   width: 261px;
 }
+
+/* ESTO ES FEATURE SECTION */
+
 .list-feature {
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +257,9 @@ p{
   letter-spacing: 0.03em;
   color: var(--main-color-grey);
 }
+
+/* ESTO ES DEDICATION SECTION */
+
 .dedication-section-title{
   display: block;
   font-weight: 700;
@@ -254,8 +278,11 @@ p{
 .dedication-section-item {
   flex-basis: calc((100% - 50px) / 3);
 }
+
+/* ESTO ES TEAM SECTION */
+
 .team-section{
-  background-color: #F5F4FA;
+  background-color: var(--main-background-chill);
 }
 .team-section-title{
   display: block;
@@ -295,8 +322,8 @@ p{
 }
 .team-section-item{
   text-align: center;
-  background-color: #FFFFFF;
-  border: 1px solid #f7ebeb;
+  background-color: var(--main-background-light);
+  border: 1px solid var(--main-border-chill);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -323,15 +350,8 @@ p{
   letter-spacing: 0.03em;
   color: var(--main-color-grey);
 }
-.icon-item{
-    width: 264px;
-    height: 112px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: var(--brand-color);
-    
-}
+
+/*ESTO ES CLIENTS */
 
 .clients-title {
     padding-top: 130px;
@@ -348,23 +368,29 @@ p{
     gap: 24px;
     margin-bottom: 151px;
 }
+.site {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: left;
+  line-height: 1.8;
+}
 .clients-list-item{
   flex-basis: calc((100% - 130px) / 6);
 }
 .clients-link{
+    border-radius: 4px;
     width: 168px;
     height: 88px;
-    border: 1px solid#AFB1B8;
+    border: 1px solid var(--main-border-grey);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 .clients-list-item{
-    color: var(--brand-color);
     width: 168px;
     height: 88px;
-    border-color: var(--brand-color);
 }
 .clients-link:hover,
 .clients-link:focus{
@@ -378,74 +404,102 @@ p{
     fill: currentColor;
 }
 
-.footer{
+
+/*ESTO ES FOOTER */
+
+
+.footer {
+  background: var(--main-background-dark);
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--main-background-dark);
+  display: flex;
 }
-.logo-footer-position{
+
+.logo-footer-position {
   margin-bottom: 9px;
   margin-right: 0px;
 }
-.list-footer{
+.contacts.site {
+  margin-bottom: 7px;
+  display: block;
+}
+.footer-container {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
-.footer-title-links{
-  color: var(--main-background-light);
+.list-footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0;
 }
-.footer-address-info{
-  font-weight: 400;
+.contacts {
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  color: var(--main-color-grey);
   text-decoration: none;
-  color: var(--main-color-light);
+  list-style: none;
 }
-.footer-address-link{
-  position: relative;
-  right:  310px;
-  top: 50px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #FFFFFF99;
-}
-.footer-address-list-item:not(:last-child){
-  margin-bottom: 5px;
-}
-.footer-address-link:hover, .footer-address-link:focus{
+
+.contacts:hover,
+.contacts:focus {
   color: var(--brand-color);
 }
-.footer-list-icon{
-    display: flex;
-    align-content: center;
-    align-items: flex-end;
-    gap: 16px;
+.link.site {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--main-background-light);
+  text-decoration: none;
+}
+.footer-item {
+  margin-bottom: 2px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
+}
 
-}
-.footer-item-icon{
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+.icon-footer {
   cursor: pointer;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
-.footer-item-icon:hover,
-.footer-item-icon:focus{
-    background-color: var(--brand-color);
+.icon-footer-encuentranos {
+  fill: var(--main-color-light);
 }
-.footer-svg-item{
-    width: 24px;
-    height: 24px;
+
+.icon-footer:hover {
+  background-color: var(--brand-color);
 }
-.footer-icon-link{
-    width: 40px;
-    height: 40px;
+.icon-footer-encuentranos:focus {
+  fill: var(--brand-color);
+  outline: none;
 }
+
+.icon-encuentranos-section {
+  fill: var(--main-color-light);
+}
+.container-icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.link.site{
+  margin-bottom: 6px;
+}
+.encuentranos {
+  padding-top: 9px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--main-color-light);
+  margin-bottom: 20px;
+}
+
+/*ESTO ES BOTONES DE PORTAFOLIO */
 
 .list-menu-button{
   display: flex;
@@ -465,7 +519,7 @@ p{
   border-radius: 4px;
 }
 .menu-section-button:hover, .menu-section-button:focus, .menu-section-button:active{
-  background-color: #2196F3;
+  background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color:  var(--main-color-light);
@@ -481,12 +535,15 @@ p{
   border: 0;
   padding: 6px 20px 6px 20px;
   border-radius: 4px;
-  background-color: #2196F3;
+  background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color:  var(--main-color-light);
   cursor: pointer;
 }
+
+/*ESTO ES PROJECTOS DE PORTAFOLIO */
+
 .list-projects {
   display: flex;
   flex-wrap: wrap;
@@ -496,10 +553,10 @@ p{
 .projects-section-list-item{
   flex-basis: calc((100% - 75px) / 3);
   background:var(--main-background-light);
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--main-border-light);
 }
 .projects-section-list-item:hover{
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--main-border-light);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-section-title-text{
