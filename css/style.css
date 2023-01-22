@@ -314,7 +314,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .team-soc-icon:focus
 .team-soc-icon:hover{
-  
+  fill: #2196F3;
 }
 .team-soc-link:hover,
 .team-soc-link:focus{
