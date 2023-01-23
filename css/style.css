@@ -135,6 +135,12 @@ h1,h2,h3,h4,h5,h6,p{
 .menu-list-link:hover, .menu-list-link:focus, .menu-list-link:active{
   color: var(--brand-color);
 }
+.icon-envelope{
+  fill: var(--main-color-grey);
+}
+.icon-envelope:hover{
+  fill: var(--brand-color);
+}
 .contact-list{
   display: flex;
   margin-left: auto;
@@ -308,13 +314,12 @@ h1,h2,h3,h4,h5,h6,p{
     justify-content: center;
 }
 .team-soc-icon{
-  height: 16.25px;
+  height: 20px;
   width: 20px;
-
+  fill: #AFB1B8;
 }
-.team-soc-icon:focus
 .team-soc-icon:hover{
-  fill: #2196F3;
+  fill: var(--main-color-light);
 }
 .team-soc-link:hover,
 .team-soc-link:focus{
@@ -361,9 +366,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 /*ESTO ES CLIENTS */
 
-.clients-title {
-    padding-top: 130px;
-    padding-bottom: 72px;
+.clients-title { 
+    margin-top: 59px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -374,7 +378,6 @@ h1,h2,h3,h4,h5,h6,p{
 .clients-list {
     display: flex; 
     gap: 24px;
-    margin-bottom: 151px;
 }
 .site {
   font-size: 14px;
@@ -410,6 +413,10 @@ h1,h2,h3,h4,h5,h6,p{
     width: 104px;
     height: 56px;
     fill: currentColor;
+    fill: #AFB1B8;
+}
+.clients-icon:hover{
+  fill: var(--brand-color);
 }
 
 
@@ -476,14 +483,9 @@ h1,h2,h3,h4,h5,h6,p{
   fill: var(--main-color-light);
 }
 
-.icon-footer:hover {
+.icon-footer:hover{
   background-color: var(--brand-color);
 }
-.icon-footer-encuentranos:focus {
-  fill: var(--brand-color);
-  outline: none;
-}
-
 .icon-encuentranos-section {
   fill: var(--main-color-light);
 }
@@ -494,7 +496,6 @@ h1,h2,h3,h4,h5,h6,p{
   cursor: pointer;
   gap: 10px;
 }
-
 .link.site{
   margin-bottom: 6px;
 }
