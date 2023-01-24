@@ -177,13 +177,10 @@ h1,h2,h3,h4,h5,h6,p{
 .hero-section{
   text-align: center;
   padding: 200px 0;
-  background-color: var(--main-background-dark);
-  background: rgba(47, 48, 58, 0.4);
-  background-size: cover;
   margin: auto;
-  background: rgba(47, 48, 58, 0.4) url("https://cdn.discordapp.com/attachments/845486960742105089/1064712815560114276/img-hero.jpg") 
-  no-repeat
-  center;
+  background: rgba(47, 48, 58, 0.4) url("https://cdn.discordapp.com/attachments/845486960742105089/1064712815560114276/img-hero.jpg")
+  no-repeat center;
+  background-size: cover;
   box-shadow: none;
 }
 
