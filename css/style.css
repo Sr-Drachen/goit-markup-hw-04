@@ -138,9 +138,6 @@ h1,h2,h3,h4,h5,h6,p{
 .icon-envelope{
   fill: var(--main-color-grey);
 }
-.icon-envelope:hover{
-  fill: var(--brand-color);
-}
 .contact-list{
   display: flex;
   margin-left: auto;
@@ -159,9 +156,17 @@ h1,h2,h3,h4,h5,h6,p{
 .contact-list-item:not(:last-child){
   margin-right: 50px;
 }
-.contact-list-link:hover, .contact-list-link:focus, .contact-list-link:active{
+.contact-list-item:hover .contact-list-link{
   color: var(--brand-color);
-  
+}
+.contact-list-item:hover .icon-envelope{
+  fill: var(--brand-color);
+}
+.contact-list-link:focus{
+  color: var(--brand-color);
+}
+.contact-list-link:focus .icon-envelope{
+  fill: var(--brand-color);
 }
 .contact-list-item:not(:last-child){
   margin-right: 50px;
@@ -313,17 +318,26 @@ h1,h2,h3,h4,h5,h6,p{
     align-items: center;
     justify-content: center;
 }
+
+.team-soc-item:hover .team-soc-link{
+  background-color: var(--brand-color);
+}
+.team-soc-item:hover .team-soc-icon{
+  fill: var(--main-color-light);
+}
+.team-soc-link .team-soc-icon:focus {
+    fill: var(--main-color-light)
+}
+.team-soc-link:focus{
+ background-color: var(--brand-color);
+}
+.team-soc-link:focus .team-soc-icon{
+  fill: var(--main-color-light);
+}
 .team-soc-icon{
   height: 20px;
   width: 20px;
   fill: #AFB1B8;
-}
-.team-soc-icon:hover{
-  fill: var(--main-color-light);
-}
-.team-soc-link:hover,
-.team-soc-link:focus{
-  background-color: var(--brand-color);
 }
 .team-dedication {
   flex-wrap: wrap;
@@ -403,17 +417,23 @@ h1,h2,h3,h4,h5,h6,p{
     width: 168px;
     height: 88px;
 }
-.clients-link:hover,
-.clients-link:focus{
-    color: var(--brand-color);
-    border-color: solid 1px var(--brand-color);
 
+.clients-list-item:hover .clients-link{
+  color: var(--brand-color);
+  border-color: solid 1px var(--brand-color);
+}
+.clients-list-item:hover .clients-icon{
+  fill: var(--brand-color);
+}
+.clients-link:focus .clients-icon{
+  background-color: var(--main-background-chill);
+  fill: var(--brand-color);
 }
 .clients-icon {
-    width: 104px;
-    height: 56px;
-    fill: currentColor;
-    fill: #AFB1B8;
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
+  fill: #AFB1B8;
 }
 .clients-icon:hover{
   fill: var(--brand-color);
@@ -479,15 +499,14 @@ h1,h2,h3,h4,h5,h6,p{
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
-.icon-footer-encuentranos {
+.icon-footer-encuentranos{
   fill: var(--main-color-light);
 }
-
 .icon-footer:hover{
   background-color: var(--brand-color);
 }
-.icon-encuentranos-section {
-  fill: var(--main-color-light);
+.icon-footer-encuentranos:focus .icon-footer{
+  background-color: var(--brand-color);
 }
 .container-icon-footer {
   display: flex;
